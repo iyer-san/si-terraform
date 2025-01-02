@@ -1,5 +1,5 @@
 locals {
-  name            = "ex-${replace(basename(path.cwd), "_", "-")}"
+  name            = "eks-${replace(basename(path.cwd), "_", "-")}"
   cluster_version = "1.29"
   region          = "us-east-2"
 
