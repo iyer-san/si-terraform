@@ -18,7 +18,7 @@ terraform {
 
   backend "s3" {
     bucket         = "general-terraform-state-use2"
-    key            = "terraform.tfstate"
+    key            = "global/s3/terraform.tfstate"
     region         = "us-east-2"
     dynamodb_table = "general-terraform-state-table-use2"
     profile = "aws-gen"
