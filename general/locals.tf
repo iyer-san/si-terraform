@@ -1,6 +1,6 @@
 locals {
   name            = "eks-${replace(basename(path.cwd), "_", "-")}"
-  cluster_version = "1.29"
+  cluster_version = "1.31"
   region          = "us-east-2"
 
   vpc_cidr = "10.0.0.0/16"
