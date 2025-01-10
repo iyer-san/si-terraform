@@ -13,7 +13,6 @@ module "eks" {
   cluster_addons = {
     kube-proxy = {}
     vpc-cni    = {}
-    eks-pod-identity-agent = {}
     coredns = {
       configuration_values = jsonencode({
         computeType = "Fargate"
